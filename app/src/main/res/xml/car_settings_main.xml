@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:title="@string/car_settings_title">
+
+    <EditTextPreference
+        android:defaultValue="@string/car_settings_brand_default"
+        android:inputType="textCapWords"
+        android:key="@string/car_settings_brand_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/car_settings_brand" />
+
+    <EditTextPreference
+        android:defaultValue="@string/car_settings_business_name_default"
+        android:inputType="textCapWords"
+        android:key="@string/car_settings_business_name_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/car_settings_business_name" />
+
+    <EditTextPreference
+        android:defaultValue="@string/car_settings_license_plate_number_default"
+        android:inputType="textCapWords"
+        android:key="@string/car_settings_license_plate_number_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/car_settings_license_plate_number" />
+
+</PreferenceScreen>

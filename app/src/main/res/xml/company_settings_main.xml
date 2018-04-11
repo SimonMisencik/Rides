@@ -1,0 +1,54 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/company_settings_title">
+
+    <EditTextPreference
+        android:defaultValue="@string/company_settings_company_default"
+        android:inputType="textCapWords"
+        android:key="@string/company_settings_company_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/company_settings_company" />
+
+    <EditTextPreference
+        android:defaultValue="@string/company_settings_city_default"
+        android:inputType="textCapWords"
+        android:key="@string/company_settings_city_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/company_settings_city" />
+
+    <EditTextPreference
+        android:defaultValue="@string/company_settings_postal_code_default"
+        android:inputType="textCapWords"
+        android:key="@string/company_settings_postal_code_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/company_settings_postal_code" />
+
+    <EditTextPreference
+        android:defaultValue="@string/company_settings_street_default"
+        android:inputType="textCapWords"
+        android:key="@string/company_settings_street_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/company_settings_street" />
+
+    <EditTextPreference
+        android:defaultValue="@string/company_settings_hause_number_default"
+        android:inputType="textCapWords"
+        android:key="@string/company_settings_hause_number_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/company_settings_hause_number" />
+
+    <EditTextPreference
+        android:defaultValue="@string/company_settings_ico_default"
+        android:inputType="numberDecimal"
+        android:key="@string/company_settings_ico_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/company_settings_ico" />
+
+    <EditTextPreference
+        android:defaultValue="@string/company_settings_dic_default"
+        android:inputType="numberDecimal"
+        android:key="@string/company_settings_dic_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/company_settings_dic" />
+
+</PreferenceScreen>

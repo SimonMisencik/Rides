@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.simonmisencik.rides.EditorActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_ride"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/start"
+                style="@style/CategoryStyle"/>
+
+            <TextView
+                android:id="@+id/start_date"
+                style="@style/DateTimeStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="14.07.1998"/>
+
+            <TextView
+                android:id="@+id/start_time"
+                style="@style/DateTimeStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="11:00"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/start_city"
+            android:hint="@string/city"
+            android:inputType="textCapWords"
+            style="@style/EditorFieldStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_ride"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/end"
+                style="@style/CategoryStyle"/>
+
+            <TextView
+                android:id="@+id/end_date"
+                style="@style/DateTimeStyle"
+                android:text="14.07.1998"
+                android:visibility="invisible"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/end_time"
+                style="@style/DateTimeStyle"
+                android:text="11:00"
+                android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/end_city"
+            android:hint="@string/city"
+            android:inputType="textCapWords"
+            style="@style/EditorFieldStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/work_stay"
+                style="@style/CategoryStyle"/>
+
+            <Switch
+                android:id="@+id/work_stay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_place_of_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:text="@string/place_of_work"
+                style="@style/CategoryStyle"
+                android:paddingRight="16dp"/>
+
+            <EditText
+                android:id="@+id/place_of_work"
+                android:hint="@string/city"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/purpuse_of_the_ride"
+            android:hint="@string/purpuse_of_the_ride"
+            style="@style/EditorFieldStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="@string/combined"
+                    style="@style/CategoryStyle" />
+
+
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="4dp">
+
+                    <EditText
+                        android:id="@+id/distance_combined"
+                        android:inputType="number"
+                        style="@style/EditorFieldStyle" />
+
+                    <TextView
+                        android:text="@string/distance_unit"
+                        style="@style/EditorUnitsStyle"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_distance_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:text="@string/city"
+                    style="@style/CategoryStyle" />
+
+
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="4dp">
+
+                    <EditText
+                        android:id="@+id/distance_city"
+                        android:inputType="number"
+                        style="@style/EditorFieldStyle" />
+
+                    <TextView
+                        android:text="@string/distance_unit"
+                        style="@style/EditorUnitsStyle"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/notes"
+            android:hint="@string/write_your_notes"
+            android:inputType="textCapWords"
+            style="@style/EditorFieldStyle" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
